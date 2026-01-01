@@ -1,7 +1,8 @@
 module Types where
 
-data Point = Black | White | Empty deriving (Show)
+data Point = Black | White | Empty deriving (Eq, Show)
 type Board = [[Point]]
 
-type Coord = (Char, Int)
-
+type Coord = (Int, Int)
+type HeaderArg = (String, String)
+type BoardState = [[Coord]]
